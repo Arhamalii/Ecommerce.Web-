@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------------fonts poppins------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>RED STORE | Account</title>
+</head>
+
+<body>
+    <div class="all-page">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"> <img src="./images/logo.png" alt="logo" width="100"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./products.html">Products</a></li>
+                    <li><a href="./account.html">Account</a></li>
+                    <li><a href="./index.html">Offers</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="cart-img">
+                <a href="./cart .html"><img src="./images/cart.png" height="27px" width="27px"></a>
+                <img class="nav-menu" src="./images/menu.png" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-------- account section-------------  -->
+    <div class="account-page">
+        <div class="conatainer">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/image1.png" width="100%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <h2>Login</h2>
+                      
+                        <form>
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" maxlength="15" >
+                            <button class="btn-login" type="submit" >Login Now</button>
+                            <a><small>Forgot Password ?</small></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- -------------------js for toggle menu------------ -->
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "400px";
+            }
+            else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+    <!---------------------footer---------------------------->
+    <div class="footer">
+        <div class="new-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download Our App For Andriod And ios Mobile Phone.</p>
+                    <img class="pl-logo" src="./images/play-store.png">
+                    <img class="pl-logo" src="./images/app-store.png">
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo-white.png">
+                    <p id="about">Our Purpose Is To Provide All Authentic Items In Reasonable Price To Our Customer..
+                        RedStore </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul class="s-links">
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Useful Links</h3>
+                    <ul class="s-links">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twiiter</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Youtube </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">CopyRight &copy; 2023 | RedStore </p>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
